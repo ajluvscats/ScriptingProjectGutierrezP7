@@ -20,10 +20,18 @@ public class KeyInput : MonoBehaviour
     {
         graphic.sprite = standard;
     }
-
+    
     // Update is called once per frame
     void Update()
     {
-        
+        bool down = Input.GetKeyDown(KeyCode.Space);
+        bool held = Input.GetKey(KeyCode.Space);
+        bool up = Input.GetKeyUp(KeyCode.Space);
+
+        if (down) ;
+        {
+            graphic.sprite = downgfx;
+        }
+            
     }
 }
