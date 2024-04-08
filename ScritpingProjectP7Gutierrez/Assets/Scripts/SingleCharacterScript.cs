@@ -52,6 +52,7 @@ public class SingleCharacterScript : MonoBehaviour
         {
             Rigidbody bulletInstance = Instantiate(bulletPrefab, firePosition.position, firePosition.rotation) as Rigidbody;
             bulletInstance.AddForce(firePosition.forward * bulletSpeed);
+            myStuff.bullets--;
         }
     }
 
