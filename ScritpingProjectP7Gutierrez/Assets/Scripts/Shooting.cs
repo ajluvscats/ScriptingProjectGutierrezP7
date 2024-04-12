@@ -9,12 +9,12 @@ public class Shooting : MonoBehaviour
     public float bulletSpeed;
 
 
-    private invetory inventory;
+    private Inventory inventory;
 
 
     private void Awake()
     {
-        inventory = GetComponent<invetory>();
+        inventory = GetComponent<Inventory>();
     }
     // Start is called before the first frame update
     void Start()
